@@ -12,20 +12,23 @@
         <h1>Airtime Generator</h1>
         <select name="" id="netWork">
             <option selected disabled value="none">Select Network Provider</option>
-            <option value="">MTN</option>
-            <option value="">GLO</option>
-            <option value="">AIRTEL</option>
-            <option value="">9MOBILE</option>
+            <option value="mtn">MTN</option>
+            <option value="glo">GLO</option>
+            <option value="airtel">AIRTEL</option>
+            <option value="9mobile">9MOBILE</option>
         </select><br><br>
         <select name="" id="amount">
             <option selected disabled value="empty">Choose Airtime Amount</option>
-            <option value="">100</option>
-            <option value="">200</option>
-            <option value="">500</option>
-            <option value="">1000</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
         </select><br>
-        <h4 id="airtimeGenerated"></h4>
-        <button onclick="generateAirtime()">Generate Airtime</button>
+        <h4 id="airtimeGenerated">Pin apears here</h4>
+        <button onclick="generateAirtime()">Generate Airtime</button><br><br>
+        <h2>Load Airtime</h2>
+        <input id="recharge" type="text"><br>
+        <button onclick="loadAirtime()">Load Card</button>
     </main>
 
     <script src="script.js"></script>
