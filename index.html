@@ -10,21 +10,21 @@
 <body>
     <main>
         <h1>Airtime Generator</h1>
-        <select name="" id="">
-            <option selected disabled value="">Select Network Provider</option>
+        <select name="" id="netWork">
+            <option selected disabled value="none">Select Network Provider</option>
             <option value="">MTN</option>
             <option value="">GLO</option>
             <option value="">AIRTEL</option>
             <option value="">9MOBILE</option>
         </select><br><br>
-        <select name="" id="">
-            <option selected disabled value="">Choose Airtime Amount</option>
+        <select name="" id="amount">
+            <option selected disabled value="empty">Choose Airtime Amount</option>
             <option value="">100</option>
-            <option value="">500</option>
             <option value="">200</option>
+            <option value="">500</option>
             <option value="">1000</option>
         </select><br>
-        <h1 id="airtimeGenerated"></h1>
+        <h4 id="airtimeGenerated"></h4>
         <button onclick="generateAirtime()">Generate Airtime</button>
     </main>
 
