@@ -2,6 +2,9 @@ main{
     margin-left: 200px;
     margin-top: 60px;
     border: 3px solid black;
+    width: fit-content;
+    padding: 30px;
+    border-radius: 13px;
 }
 select{
     width: 250px;
@@ -14,3 +17,42 @@ select{
     padding: 3px;
     text-align: center;
 }
+
+        /* generate airtime button */
+#btn-1{
+ margin-left: 50px;
+ height: 26px;
+ background-color: brown;
+ color: white;
+ border: none;
+ border-radius: 10px;
+}
+#btn-1:hover{
+    background-color: rgba(22, 21, 21, 0.555);
+    cursor: pointer;
+}
+        /* generate airtime button ends */
+h2{
+    margin-left: 40px;
+}
+#recharge{
+    width: 200px;
+    height: 20px;
+}
+
+            /* load card button starts */
+#btn-2{
+ margin-left: 60px;
+ height: 26px;
+ width: 100px;
+ background-color: green;
+ color: white;
+ border: none;
+ border-radius: 10px;
+}
+#btn-2:hover{
+ background-color: rgba(2, 121, 2, 0.575);
+ cursor: pointer;
+}
+
+        /* load card button ends */
