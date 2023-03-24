@@ -22,29 +22,41 @@ function generateAirtime() {
 }
 
 function loadAirtime() {
-    if (network.value === "mtn" && recharge.value.startsWith('*555*') && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
-        alert( "#" + amount.value + " " + network.value.toUpperCase() + " Recharge is successful")
+    if      (network.value === "mtn" && recharge.value.startsWith('*555*') && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
+        alert( "#" + amount.value + " " + network.value.toUpperCase() + " Recharge is Successful")
     }
     else if (network.value === "mtn" && recharge.value.startsWith('*555*') != '*555*' && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
-        alert( "Invalid recharge code")
+        alert( "Invalid Recharge Code")
     }
-        else if (network.value === "glo" && recharge.value.startsWith('*123*') && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
-          alert( "#" + amount.value + " " + network.value.toUpperCase() + " Recharge is successful")
+    else if (network.value === "mtn" && recharge.value.startsWith('*555*') && recharge.value.includes(randomNumber) != randomNumber && recharge.value.endsWith('#')) {
+        alert( "Invalid Recharge Pin")
+    }
+    else if (network.value === "glo" && recharge.value.startsWith('*123*') && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
+        alert( "#" + amount.value + " " + network.value.toUpperCase() + " Recharge is Successful")
     }
     else if (network.value === "glo" && recharge.value.startsWith('*123*') != '*123*' && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
-        alert( "Invalid recharge code")
+        alert( "Invalid Recharge Code")
+    }
+    else if (network.value === "glo" && recharge.value.startsWith('*123*') && recharge.value.includes(randomNumber) != randomNumber && recharge.value.endsWith('#')) {
+        alert( "Invalid Recharge Pin")
     }
     else if (network.value === "airtel" && recharge.value.startsWith('*126*') && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
-        alert( "#" + amount.value + " " + network.value.toUpperCase() + " Recharge is successful")
+        alert( "#" + amount.value + " " + network.value.toUpperCase() + " Recharge is Successful")
     }
     else if (network.value === "airtel" && recharge.value.startsWith('*126*') != '*126*' && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
-    alert( "Invalid recharge code")
+    alert( "Invalid Recharge Code")
+    }
+    else if (network.value === "airtel" && recharge.value.startsWith('*126*') && recharge.value.includes(randomNumber) != randomNumber && recharge.value.endsWith('#')) {
+        alert( "Invalid Recharge Pin")
     }
     else if (network.value === "9mobile" && recharge.value.startsWith('*222*') && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
-    alert( "#" + amount.value + " " + network.value.toUpperCase() + " Recharge is successful")
+    alert( "#" + amount.value + " " + network.value.toUpperCase() + " Recharge is Successful")
     }
     else if (network.value === "9mobile" && recharge.value.startsWith('*222*') != '*222*' && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
-        alert( "Invalid recharge code")
+        alert( "Invalid Recharge Code")
+    }
+    else if (network.value === "9mobile" && recharge.value.startsWith('*222*') && recharge.value.includes(randomNumber) != randomNumber && recharge.value.endsWith('#')) {
+        alert( "Invalid Recharge Pin")
     }
      else {
         alert("Recharge failed")
