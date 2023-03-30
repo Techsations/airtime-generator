@@ -1,10 +1,11 @@
 main{
-    margin-left: 200px;
-    margin-top: 60px;
+    margin-left: 600px;
+    margin-top: 100px;
     border: 3px solid black;
     width: fit-content;
     padding: 30px;
     border-radius: 13px;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 128, 0.247);
 }
 select{
     width: 250px;
@@ -12,15 +13,16 @@ select{
 }
 #airtimeGenerated{
     border: 1px solid black;
-    width: 200px;
+    width: 245px;
     height: 35px;
     padding: 3px;
     text-align: center;
+    border-radius: 10px;
 }
 
         /* generate airtime button */
 #btn-1{
- margin-left: 50px;
+ margin-left: 70px;
  height: 26px;
  background-color: brown;
  color: white;
@@ -36,13 +38,13 @@ h2{
     margin-left: 40px;
 }
 #recharge{
-    width: 200px;
+    width: 250px;
     height: 20px;
 }
 
             /* load card button starts */
 #btn-2{
- margin-left: 60px;
+ margin-left: 80px;
  height: 26px;
  width: 100px;
  background-color: green;
