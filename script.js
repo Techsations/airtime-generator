@@ -17,7 +17,7 @@ function generateAirtime() {
         alert('Plaese select an Airtime amount');
 } 
     else {
-        display.innerText = randomNumber
+        display.value = randomNumber
     }  
 }
 
