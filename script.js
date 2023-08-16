@@ -25,9 +25,6 @@ function loadAirtime() {
     if      (network.value === "mtn" && recharge.value.startsWith('*311*') && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
         alert( "#" + amount.value + " " + network.value.toUpperCase() + " Recharge is Successful")
     }
-    else if (network.value === "mtn" && recharge.value.startsWith('*555*') != '*311*' && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
-        alert( "Dear Customer, this service code is no longer available. Kindly dial *311*Pin# to recharge")
-    }
     else if (network.value === "mtn" && recharge.value.startsWith('*311*') != '*311*' && recharge.value.includes(randomNumber) && recharge.value.endsWith('#')) {
         alert( "Invalid Recharge Code")
     }
