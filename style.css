@@ -1,60 +1,58 @@
-main{
-    margin-left: 600px;
-    margin-top: 100px;
-    border: 3px solid black;
-    width: fit-content;
-    padding: 30px;
-    border-radius: 13px;
-    box-shadow: 6px 6px 6px 6px rgba(0, 0, 128, 0.247);
-}
-select{
-    width: 250px;
-    height: 25px;
-}
-#airtimeGenerated{
-    border: 1px solid black;
-    width: 245px;
-    height: 35px;
-    padding: 3px;
-    text-align: center;
-    border-radius: 10px;
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-        /* generate airtime button */
-#btn-1{
- margin-left: 70px;
- height: 26px;
- background-color: brown;
- color: white;
- border: none;
- border-radius: 10px;
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
-#btn-1:hover{
-    background-color: rgba(22, 21, 21, 0.555);
+
+main {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h4 {
+    margin-bottom: 15px;
+}
+
+select, input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
     cursor: pointer;
-}
-        /* generate airtime button ends */
-h2{
-    margin-left: 40px;
-}
-#recharge{
-    width: 250px;
-    height: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-            /* load card button starts */
-#btn-2{
- margin-left: 80px;
- height: 26px;
- width: 100px;
- background-color: green;
- color: white;
- border: none;
- border-radius: 10px;
-}
-#btn-2:hover{
- background-color: rgba(2, 121, 2, 0.575);
- cursor: pointer;
+button:hover {
+    background-color: #0056b3;
 }
 
-        /* load card button ends */
+/* Center align the button */
+#btn-1, #btn-2 {
+    margin: 0 auto;
+}
+
+/* Center the main content */
+@media screen and (max-width: 768px) {
+    main {
+        margin: 20px auto;
+    }
+}
